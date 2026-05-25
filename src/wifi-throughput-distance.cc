@@ -29,6 +29,9 @@ using namespace ns3;
  *
  * Example:
  * ./ns3 run "scratch/wifi-throughput-distance --distance=20 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/results.csv"
+ *
+ * Note: SINR is discussed theoretically in the report, but this implementation
+ * focuses on application/network-level KPIs: throughput, delay, and packet loss.
  */
 
 NS_LOG_COMPONENT_DEFINE("WifiThroughputDistance");

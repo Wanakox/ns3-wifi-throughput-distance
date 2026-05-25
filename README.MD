@@ -178,6 +178,9 @@ This file implements the complete NS-3 scenario:
 - UDP traffic generation from the Station to the Access Point;
 - KPI extraction using FlowMonitor;
 - export of the results to CSV format.
+- configuration of the WiFi PHY and MAC layers;
+- configuration of the wireless propagation model;
+- assignment of fixed node positions;
 
 Before executing the simulation, the source file must be copied into the NS-3 `scratch/` directory:
 
@@ -208,6 +211,8 @@ The most relevant configurable parameters are:
 | `--packetSize` | Size of each UDP packet in bytes. |
 | `--simulationTime` | Total duration of the simulation. |
 | `--csvFile` | Path of the CSV file where results are stored. |
+
+The simulation uses `MinstrelWifiManager` because it provides automatic WiFi rate adaptation. This is important in a throughput-versus-distance experiment, since the selected transmission rate may change when channel conditions degrade with distance, affecting throughput, delay, and packet loss.
 
 ---
 
