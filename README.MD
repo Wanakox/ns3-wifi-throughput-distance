@@ -197,7 +197,7 @@ cd ~/ns-3-dev
 A single simulation run can be executed with:
 
 ```bash
-./ns3 run "scratch/wifi-throughput-distance --distance=10 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/results.csv"
+./ns3 run "scratch/wifi-throughput-distance --distance=10 --csvFile=/<path>/WN/ns3-wifi-throughput-distance/results/results.csv"
 ```
 
 This command runs the simulation with a distance of `10 m` between the AP and the STA, and stores the results in a CSV file.
@@ -348,7 +348,7 @@ For `test_1`:
 ```bash
 for d in 1 5 10 20 30 40 50 60 70 80
 do
-    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.0002 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/test_1/results_far_high_load.csv"
+    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.0002 --csvFile=/<path>/ns3-wifi-throughput-distance/results/test_1/results_far_high_load.csv"
 done
 ```
 
@@ -357,7 +357,7 @@ For `test_2`:
 ```bash
 for d in 1 5 10 20 30 40 50 60 70 80
 do
-    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.0002 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/test_2/results_far_high_load.csv"
+    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.0002 --csvFile=/<path>/ns3-wifi-throughput-distance/results/test_2/results_far_high_load.csv"
 done
 ```
 
@@ -370,7 +370,7 @@ For `test_1`:
 ```bash
 for d in 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
 do
-    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.0002 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/test_1/results_short_high_load.csv"
+    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.0002 --csvFile=/<path>/ns3-wifi-throughput-distance/results/test_1/results_short_high_load.csv"
 done
 ```
 
@@ -380,7 +380,7 @@ For `test_2`:
 ```bash
 for d in 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
 do
-    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.0002 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/test_2/results_short_high_load.csv"
+    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.0002 --csvFile=/<path>/ns3-wifi-throughput-distance/results/test_2/results_short_high_load.csv"
 done
 ```
 
@@ -394,7 +394,7 @@ For `test_1`:
 ```bash
 for d in 1 5 10 20 30 40 50 60 70 80
 do
-    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.001 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/test_1/results_far_low_load.csv"
+    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.001 --csvFile=/<path>/ns3-wifi-throughput-distance/results/test_1/results_far_low_load.csv"
 done
 ```
 For `test_2`:
@@ -402,7 +402,7 @@ For `test_2`:
 ```bash
 for d in 1 5 10 20 30 40 50 60 70 80
 do
-    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.001 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/test_2/results_far_low_load.csv"
+    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.001 --csvFile=/<path>/ns3-wifi-throughput-distance/results/test_2/results_far_low_load.csv"
 done
 ```
 
@@ -416,7 +416,7 @@ For `test_1`:
 ```bash
 for d in 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
 do
-    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.001 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/test_1/results_short_low_load.csv"
+    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.001 --csvFile=/<path>/ns3-wifi-throughput-distance/results/test_1/results_short_low_load.csv"
 done
 ```
 For `test_2`:
@@ -424,7 +424,7 @@ For `test_2`:
 ```bash
 for d in 0.5 1 1.5 2 2.5 3 3.5 4 4.5 5
 do
-    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.001 --csvFile=/home/wan/Escritorio/WN/ns3-wifi-throughput-distance/results/test_2/results_short_low_load.csv"
+    ./ns3 run "scratch/wifi-throughput-distance --distance=$d --packetInterval=0.001 --csvFile=/<path>/ns3-wifi-throughput-distance/results/test_2/results_short_low_load.csv"
 done
 ```
 
